@@ -1,0 +1,33 @@
+{
+  "name": "auth-tools",
+  "version": "1.0.0",
+  "description": "A simple JWT encoding / encryption helper library",
+  "main": "authorizer.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "eslint": "eslint index.js libs/",
+    "eslint:watch": "nodemon -w test/ -w index.js -w libs/ -x 'npm run eslint'",
+    "test:watch": "nodemon -w test/ -w index.js -w libs/ -x 'npm run eslint && npm run test:unit'",
+    "pretest": "npm run eslint",
+    "test:unit": "mocha test/* --reporter=list",
+    "test:coverage": "nyc --reporter=html --reporter=text mocha test/*",
+    "test": "npm run test:coverage",
+    "posttest": "cost-of-modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.1.2",
+    "cost-of-modules": "1.0.1",
+    "eslint": "5.2.0",
+    "mocha": "5.2.0",
+    "nodemon": "1.18.3",
+    "nyc": "12.0.2"
+  },
+  "dependencies": {
+    "jsonwebtoken": "8.3.0"
+  }
+}
