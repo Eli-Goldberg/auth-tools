@@ -1,4 +1,6 @@
 # auth-tools
+[![Build Status](https://secure.travis-ci.org/Eli-Goldberg/auth-tools.svg?branch=master)](http://travis-ci.org/Eli-Goldberg/auth-tools)[![Dependency Status](https://david-dm.org/Eli-Goldberg/auth-tools.svg)](https://david-dm.org/Eli-Goldberg/auth-tools)
+
 A simple JWT encoding / encryption helper library
 
 ## Installing
