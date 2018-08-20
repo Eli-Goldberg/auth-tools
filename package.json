@@ -1,5 +1,5 @@
 {
-  "name": "auth-tools",
+  "name": "@compit/auth-tools",
   "version": "1.0.0",
   "description": "A simple JWT encoding / encryption helper library",
   "main": "authorizer.js",
